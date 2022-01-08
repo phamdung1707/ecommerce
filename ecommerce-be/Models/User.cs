@@ -15,5 +15,7 @@ namespace ecommerce_be.Models
         public string address { get; set; }
         public int age { get; set; }
         public bool isSeller { get; set; }
+        public string description { get; set; }
+        public string images { get; set; }
     }
 }

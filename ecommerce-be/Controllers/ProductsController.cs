@@ -69,5 +69,13 @@ namespace ecommerce_be.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("getall")]
+        public async Task<IActionResult> GetTest()
+        {
+            var result = await _productService.GetAllTest();
+
+            return Ok(result);
+        }
     }
 }

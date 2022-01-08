@@ -16,5 +16,6 @@ namespace ecommerce_be.Services.Products
         Task<ApiResult<Product>> UpdateProduct(Product request);
         Task<ApiResult<Product>> DeleteProduct(long id);
         Task<ApiResult<List<Product>>> FindByName(string name);
+        Task<List<Product>> GetAllTest();
     }
 }

@@ -40,7 +40,7 @@ namespace ecommerce_be.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Chats");
                 });
 
             modelBuilder.Entity("ecommerce_be.Models.Comment", b =>
@@ -64,7 +64,7 @@ namespace ecommerce_be.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("ecommerce_be.Models.Order", b =>
@@ -116,7 +116,7 @@ namespace ecommerce_be.Migrations
                     b.Property<string>("images")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("isFavorite")
+                    b.Property<bool>("isFavourite")
                         .HasColumnType("bit");
 
                     b.Property<bool>("isPopular")
@@ -154,7 +154,7 @@ namespace ecommerce_be.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Vouchers");
+                    b.ToTable("RoomChats");
                 });
 
             modelBuilder.Entity("ecommerce_be.Models.User", b =>
@@ -170,7 +170,13 @@ namespace ecommerce_be.Migrations
                     b.Property<int>("age")
                         .HasColumnType("int");
 
+                    b.Property<string>("description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("gmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("images")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("isSeller")

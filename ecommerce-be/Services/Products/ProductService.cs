@@ -34,7 +34,7 @@ namespace ecommerce_be.Services.Products
                 colors = request.colors,
                 price = request.price,
                 type = request.type,
-                isFavorite = request.isFavorite,
+                isFavourite = request.isFavorite,
                 isPopular = request.isPopular,
                 description = request.description,
                 user_id = request.user_id
@@ -63,7 +63,7 @@ namespace ecommerce_be.Services.Products
             product.colors = request.colors;
             product.price = request.price;
             product.type = request.type;
-            product.isFavorite = request.isFavorite;
+            product.isFavourite = request.isFavourite;
             product.isPopular = request.isPopular;
             product.description = request.description;
             product.user_id = request.user_id;
@@ -116,6 +116,11 @@ namespace ecommerce_be.Services.Products
             var products = await _context.Products.Where(product => product.title_name.ToLower().Contains(name.ToLower().Trim())).ToListAsync();
 
             return new ApiSuccessResult<List<Product>>("Lấy danh sách sản phẩm thành công", products);
+        }
+
+        public async Task<List<Product>> GetAllTest()
+        {
+            return await _context.Products.ToListAsync();
         }
     }
 }

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Project\ecommerce-be\ecommerce-be\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2022-01-08T21:45:26.5870765Z;True|2022-01-09T04:25:23.2637870+07:00;True|2022-01-06T13:58:47.5212026+07:00;True|2022-01-06T01:05:15.7248285+07:00;True|2022-01-06T00:34:21.9896071+07:00;True|2021-12-29T00:51:46.3138284+07:00;True|2021-12-27T23:56:17.5907269+07:00;True|2021-12-27T23:24:40.0803315+07:00;True|2021-12-23T08:39:11.1898714+07:00;True|2021-12-21T08:37:08.9312160+07:00;True|2021-12-18T02:23:04.3043828+07:00;True|2021-12-18T02:18:44.5416543+07:00;True|2021-12-18T02:18:33.0655249+07:00;True|2021-12-18T02:13:49.1089209+07:00;True|2021-12-18T01:57:02.4708778+07:00;True|2021-12-18T01:44:10.2751004+07:00;True|2021-12-17T23:14:12.8450645+07:00;</History>
+  </PropertyGroup>
+</Project>

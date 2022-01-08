@@ -14,10 +14,10 @@ namespace ecommerce_be.Models
         }
 
         public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Comment> OrderDetails { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Chat> Roles { get; set; }
+        public virtual DbSet<Chat> Chats { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<RoomChat> Vouchers { get; set; }
+        public virtual DbSet<RoomChat> RoomChats { get; set; }
     }
 }
