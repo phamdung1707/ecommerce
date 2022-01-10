@@ -46,6 +46,14 @@ namespace ecommerce_be.Controllers
             return Ok(result);
         }
 
+        [HttpGet("user/{id}")]
+        public async Task<IActionResult> GetByUserId(long id)
+        {
+            var result = await _productService.GetByUserId(id);
+
+            return Ok(result);
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(long id)
         {

@@ -83,6 +83,13 @@ namespace ecommerce_be.Services.Products
             return new ApiSuccessResult<List<Product>>("Lấy danh sách sản phẩm thành công", products);
         }
 
+        public async Task<ApiResult<List<Product>>> GetByUserId(long id)
+        {
+            var products = await _context.Products.Where(product => product.user_id == id).ToListAsync();
+
+            return new ApiSuccessResult<List<Product>>("Lấy danh sách sản phẩm thành công", products);
+        }
+
         public async Task<ApiResult<Product>> GetById(long id)
         {
             var product = await _context.Products.FirstOrDefaultAsync(p => p.id == id);
